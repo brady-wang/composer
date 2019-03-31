@@ -2,11 +2,13 @@
 
 
 
-echo "我是入口文件";
-define("APP_PATH",realpath("./"));
+define("BASE_PATH",realpath("./"));
+define("APP_PATH",BASE_PATH."App/");
 
-require APP_PATH."/Core/Loader.php"; //
+require BASE_PATH."/Core/Loader.php"; //
 
 spl_autoload_register("\Core\Loader"."::loadClass");
 
-call_user_func("\Core\Run::init","test");
+
+require BASE_PATH."/vendor/autoload.php";
+call_user_func("\Core\Run::init");

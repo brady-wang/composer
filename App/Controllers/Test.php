@@ -6,22 +6,16 @@
  * Time: 08:37
  */
 
-namespace Core;
+namespace App\Controllers;
 
 
-use App\Controllers\Test;
-
-class Run
+class Test
 {
-	public static function init()
+	public function test_array_filter()
 	{
-
 		$arr = ['name','age',"",null,false,true];
 		$res = array_filter($arr);
 		dump($res);
 
-
-
 	}
-
 }

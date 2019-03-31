@@ -1,0 +1,21 @@
+{
+    "name": "brady/learn",
+    "description": "this is my learn",
+    "require": {
+        "php":"^7.0.0",
+        "monolog/monolog": "^1.24"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "brady wang",
+            "email": "brady.wang@qq.com"
+        }
+    ],
+    "autoload":{
+        "classmap":[
+          "Libraries"
+        ],
+        "files":["helpers/baseHelper.php"]
+    }
+}

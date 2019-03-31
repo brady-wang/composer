@@ -6,7 +6,7 @@
  * Time: 22:24
  */
 
-namespace Controllers;
+namespace App\Controllers;
 
 
 class UserController
