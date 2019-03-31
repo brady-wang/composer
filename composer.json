@@ -3,7 +3,7 @@
     "description": "this is my learn",
     "require": {
         "php":"^7.0.0",
-        "monolog/monolog": "^1.24"
+        "brady/tool":"dev-master"
     },
     "license": "MIT",
     "authors": [
@@ -16,6 +16,10 @@
         "classmap":[
           "Libraries"
         ],
-        "files":["helpers/baseHelper.php"]
+        "files":["helpers/baseHelper.php"],
+        "psr-4":{
+            "Wang\\":"src/",
+            "Brady\\Tool\\":"vendor/brady/tool/src"
+        }
     }
 }
