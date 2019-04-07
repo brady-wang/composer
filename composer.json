@@ -19,7 +19,8 @@
         "files":["helpers/baseHelper.php"],
         "psr-4":{
             "Wang\\":"src/",
-            "Brady\\Tool\\":"vendor/brady/tool/src"
+            "Brady\\Tool\\":"vendor/brady/tool/src",
+            "App\\":"App/"
         }
     }
 }

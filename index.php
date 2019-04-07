@@ -34,3 +34,14 @@ $db = new Tool\Db\DB();
 
 $db->hello();
 Tool\Redis::getInstance();
+
+use Monolog\Logger;
+use Monolog\Handler\StreamHandler;
+
+// create a log channel
+$log = new Logger('name');
+$log->pushHandler(new StreamHandler('logs/monolog.log', Logger::WARNING));
+
+// add records to the log
+$log->warning('Foo');
+$log->error('Bar');
