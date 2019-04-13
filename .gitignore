@@ -3,3 +3,4 @@
 composer.lock
 .user.ini
 vendor/
+logs/
